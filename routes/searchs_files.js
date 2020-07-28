@@ -1,9 +1,9 @@
-const express= require('express');
+const express = require('express');
 // using express.Router
-const router= express.Router();
+const router = express.Router();
 
-const searchfileController= require('../controllers/search_file_controller');
+const searchfileController = require('../controllers/search_file_controller');
 
-router.post('/update',searchfileController.update);
+router.post('/update', searchfileController.upload);
 // router.get('/upload', searchfileController.uploadCsv);
-module.exports= router;
+module.exports = router;
